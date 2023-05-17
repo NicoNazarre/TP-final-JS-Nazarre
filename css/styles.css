@@ -1,0 +1,39 @@
+/**
+color principal: #3F52B5; azul claro
+color secundario: #FFA441; anaranjado
+color terciario: #FFE641; amarillo
+**/
+/**
+body {
+    background-color: #FFA441;
+}
+**/
+
+a:hover {
+    color: #FFA441 !important;
+    transition: 0.8s !important;
+    cursor: pointer !important;
+}
+
+nav a:hover {
+    background-color: #3F52B5;
+    transition: 0.8s;
+    cursor: pointer; 
+}
+
+a {
+    color: #FFE641;
+}
+
+.galeria {
+    background-color: #FFA441;
+    padding: 20px 0px 0px 0px;
+    margin: 400px 0px 400px 0px;
+}
+
+#botonFondo {
+    
+}
+
+
+
