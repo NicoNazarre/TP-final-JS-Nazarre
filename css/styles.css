@@ -2,12 +2,20 @@
 color principal: #3F52B5; azul claro
 color secundario: #FFA441; anaranjado
 color terciario: #FFE641; amarillo
+color cuaternario: #00ffff; aqua
 **/
-/**
-body {
-    background-color: #FFA441;
+
+.color-body {
+    background-color: #5dcdb5;
 }
-**/
+
+.menu {
+    background-color: #FFE641;
+}
+
+.form-reserva {
+    background-color: #00ffff;
+}
 
 a:hover {
     color: #FFA441 !important;
@@ -31,8 +39,14 @@ a {
     margin: 400px 0px 400px 0px;
 }
 
-#botonFondo {
-    
+.seccion {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.dark {
+    background-color: black;
+    color: white;
 }
 
 

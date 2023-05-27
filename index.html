@@ -15,9 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,700&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="color-body">
     <header>
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg menu">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">Velero Susurro</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,21 +40,23 @@
       </nav>
     </header>
       <div>
-        <form>
-          <h1 class="h3 mb-3 fw-normal" id="descripcionDelFormulario">Ingrese los datos de todas las personas para la reserva:</h1>
-            <div class="form-floating" id="divContenedor">
-              <input id="nombre" type="name" class="form-control"  placeholder="nombre">
-              <label for="floatingInput">Nombre</label>
-            </div>
-            <div class="form-floating">
-              <input id="apellido" type="name" class="form-control"  placeholder="Apellido">
-              <label for="floatingInput">Apellido</label>
-            </div>
-            <div class="form-floating">
-              <input id="edad" type="name" class="form-control"  placeholder="Edad">
-              <label for="floatingInput">Edad</label>
-            </div>
-            <button id="boton" class="w-100 btn btn-lg btn-primary" type="reset" onclick="capturar();">Confirmar persona</button>
+        <form class="form-reserva">
+          <div>
+            <h1 class="h3 mb-3 fw-normal" id="descripcionDelFormulario">Ingrese los datos de todas las personas para la reserva:</h1>
+          </div>
+          <div class="form-floating" id="divContenedor">
+            <input id="nombre" type="name" class="form-control"  placeholder="nombre">
+            <label for="floatingInput">Nombre</label>
+          </div>
+          <div class="form-floating">
+            <input id="apellido" type="name" class="form-control"  placeholder="Apellido">
+            <label for="floatingInput">Apellido</label>
+          </div>
+          <div class="form-floating">
+            <input id="edad" type="name" class="form-control"  placeholder="Edad">
+            <label for="floatingInput">Edad</label>
+          </div>
+          <button id="boton" class="w-100 btn btn-lg btn-primary" type="reset" onclick="capturar();">Confirmar persona</button>
         </form>
           <div class="container">
             <table id="tabla" class="table" >
@@ -68,77 +70,84 @@
             </table>
           </div>
   
-  <section class="videos">
-    <div id="carouselVideoExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <video class="img-fluid" video autoplay muted loop>
-            <source src="multimedia/Ilhas e Lagoas .mp4" type="video/mp4" />
-          </video>
-        <div class="carousel-caption d-none d-md-block">
-        <h5>Velero Susurro</h5>
-        <p>Donde el mar vive en perfecta armonía con los vientos.</p>
+  <section class="seccion">
+    <div class="container">
+      <div id="carouselVideoExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <video class="img-fluid" video autoplay muted loop>
+              <source src="multimedia/Ilhas e Lagoas .mp4" type="video/mp4" />
+            </video>
+          <div class="carousel-caption d-none d-md-block">
+          <h5>Velero Susurro</h5>
+          <p>Donde el mar vive en perfecta armonía con los vientos.</p>
+        </div>
       </div>
     </div>
   </section>
   
   <article>
-    <h1>Navegación en Angra Dos Reis en Velero Susurro</h1>
-    <p>Vivi unos días de navegación en un mar cristalíno y con temperaturas agradables todo el año.</p>
+    <div class="container">
+      <h1>Navega en Angra Dos Reis con Velero Susurro</h1>
+      <p>Vivi unos días de navegación en un mar cristalíno y con temperaturas agradables todo el año.</p>
+    </div>
   </article>
-  <section class="carrusel">
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="multimedia/foto profe.jpg" class="d-block w-100" alt="foto de lejos a velero">
+
+  <section class="seccion">
+    <div class="container">
+      <div id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel" >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="multimedia/foto profe.jpg" class="d-block w-100" alt="foto de lejos a velero">
+          </div>
+          <div class="carousel-item">
+            <img src="multimedia/foto aerea.jpg" class="d-block w-100" alt="foto aerea de la isla">
+          </div>
+          <div class="carousel-item">
+            <img src="multimedia/dos veleros amarrados.jpg" class="d-block w-100" alt="playa del Dentista">
+          </div>
+          <div class="carousel-item">
+            <img src="multimedia/atardecer.jpg" class="d-block w-100" alt="playa del Dentista">
+          </div>
+          <div class="carousel-item">
+            <img src="multimedia/peces.jpg" class="d-block w-100" alt="playa del Dentista">
+          </div>
+          <div class="carousel-item">
+            <img src="multimedia/vista trasera.jpg" class="d-block w-100" alt="playa del Dentista">
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="multimedia/foto aerea.jpg" class="d-block w-100" alt="foto aerea de la isla">
-        </div>
-        <div class="carousel-item">
-          <img src="multimedia/dos veleros amarrados.jpg" class="d-block w-100" alt="playa del Dentista">
-        </div>
-        <div class="carousel-item">
-          <img src="multimedia/atardecer.jpg" class="d-block w-100" alt="playa del Dentista">
-        </div>
-        <div class="carousel-item">
-          <img src="multimedia/peces.jpg" class="d-block w-100" alt="playa del Dentista">
-        </div>
-        <div class="carousel-item">
-          <img src="multimedia/vista trasera.jpg" class="d-block w-100" alt="playa del Dentista">
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
   </section>
 
-  <section class="videos">
-    <div
-      id="carouselVideoExample"
-      class="carousel slide carousel-fade"
-      data-mdb-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <video class="img-fluid" video autoplay muted loop>
-            <source src="multimedia/Ilhas e Lagoas - Ilhas Paradisíacas .mp4" type="video/mp4" />
-          </video>
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Velero Susurro</h5>
-            <p>Donde el mar vive en perfecta armonía con los vientos.</p>
-        </div>
+  <section class="seccion">
+    <div class="container">
+      <div id="carouselVideoExample"
+        class="carousel slide carousel-fade"
+        data-mdb-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <video class="img-fluid" video autoplay muted loop>
+              <source src="multimedia/Ilhas e Lagoas - Ilhas Paradisíacas .mp4" type="video/mp4" />
+            </video>
+
+      </div>
     </div>
   </section>
 
   <article>
-    <h1>Navega en Angra Dos Reis con Velero Susurro</h1>
-    <p>Vivi unos días de navegación en un mar cristalíno y con temperaturas agradables todo el año.</p>
+    <div class="container">
+      <h1>Navega en Angra Dos Reis con Velero Susurro</h1>
+      <p>Vivi unos días de navegación en un mar cristalíno y con temperaturas agradables todo el año.</p>
+    </div>
   </article>
   
   <footer class="text-center text-white" style="background-color: #3f51b5">
