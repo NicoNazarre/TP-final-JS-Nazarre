@@ -9,7 +9,9 @@ localStorage.removeItem("saludo");
 localStorage.clear();
 const datos = document.getElementsByClassName("datos");
 const total = document.getElementsByTagName("th")
-for (let dato of datos) 
+for (let dato of datos) {
+
+}
 
 class Producto {
     constructor(nombre, precio) {
@@ -24,31 +26,31 @@ const baseDeDatos = [
         id: 1,
         nombre: 'Abrau',
         precio: 400,
-        imagen: 'D:/Programación/CoderHouse/curso-JAVASCRIPT/TP-final-JS-Nazarre/multimedia/abraao.jpg' 
+        imagen: '../multimedia/abraao.jpg' 
     },
     {
         id: 2,
         nombre: 'Dentista',
         precio: 700,
-        imagen: 'D:/Programación/CoderHouse/curso-JAVASCRIPT/TP-final-JS-Nazarre/multimedia/dentista.jpg'
+        imagen: '../multimedia/dentista.jpg'
     },
     {
         id: 3,
         nombre: 'Lopez Mendez',
         precio: 900,
-        imagen: 'D:/Programación/CoderHouse/curso-JAVASCRIPT/TP-final-JS-Nazarre/multimedia/lopes mendes.jpg'
+        imagen: '../multimedia/lopes mendes.jpg'
     },
     {
         id: 4,
         nombre: 'Lagoa Azul',
         precio: 500,
-        imagen: 'D:/Programación/CoderHouse/curso-JAVASCRIPT/TP-final-JS-Nazarre/multimedia/lagoa azul.jpg'
+        imagen: '../multimedia/lagoa azul.jpg'
     },
     {
         id: 5,
         nombre: 'Lagoa Verde',
         precio: 600,
-        imagen: 'D:/Programación/CoderHouse/curso-JAVASCRIPT/TP-final-JS-Nazarre/multimedia/lagoa verde.jpg'
+        imagen: '../multimedia/lagoa verde.jpg'
     }
 
 ];
