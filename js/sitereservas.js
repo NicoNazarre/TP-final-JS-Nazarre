@@ -85,7 +85,7 @@ function renderizarProductos() {
        
         const miNodoBoton = document.createElement('button');
         miNodoBoton.classList.add('btn', 'btn-primary');
-        miNodoBoton.textContent = 'Ingrese la cantidad de personas';
+        miNodoBoton.textContent = '1 click por cada persona';
         miNodoBoton.setAttribute('marcador', info.id);
         miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
        
